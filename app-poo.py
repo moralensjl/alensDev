@@ -45,6 +45,16 @@ class CuentaUsuario(Persona):
         self.__contrasena = nuevo
 
 
+    def newUser(self, nuevoUsuario):
+
+        '''
+        Creamos una funcion para registrar a un nuevo usuario
+        '''
+
+        return nuevoUsuario
+        
+
+
 
     def __str__(self):
         return f'{self.nombre}, {self.apellido}, {self.identificador}, {self.nombre_usuario} {self.__contrasena} '
@@ -55,5 +65,12 @@ class CuentaUsuario(Persona):
 usuario1 = CuentaUsuario('Nathaly', 'Gomes', '004', '@nathalyGs', '09gomes')
 usuario2 = CuentaUsuario('Peter', 'Rubel', '005', '@peterR90', 'Rubel2304') 
 usuario3 = CuentaUsuario('Fernanda', 'Rinza', '006', 'Fernan_rinza14', 'rinza1404')
+usuario4 = CuentaUsuario('Charles', 'Shade', '007', '', 'o9004')
 print(usuario1.nombre_usuario)
+
+# Colocamos un mensaje por pantalla para indicar que un nuevo usuario se ha registrado
+usuarioNuevo = usuario4.newUser(('Te has registrado correctamente (ShadeC)'))
+print(usuarioNuevo)
+print(usuario4.nombre_usuario)
+
 
