@@ -76,6 +76,7 @@ calificacion = rangoNota(80)
 print(calificacion)
 
 calificacion = rangoNota(90)
+print(calificacion)
 
 calificacion = rangoNota(50)
 print(calificacion)
